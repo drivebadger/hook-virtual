@@ -8,7 +8,7 @@ basedir=$3
 target_root_directory=$4
 err=""
 
-host=`basename "$image" .$type |tr ' ' '_'`
+host=`/opt/drivebadger/hooks/hook-virtual/helpers/get-image-hostname.sh $type "$image"`
 subtarget=$target_root_directory/$host-$type
 mkdir -p $subtarget
 
