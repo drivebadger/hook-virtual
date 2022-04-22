@@ -1,0 +1,5 @@
+*.avhd
+*.avhdx
+*.vhd
+*.vhdx
+*.vmdk

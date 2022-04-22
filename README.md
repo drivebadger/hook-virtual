@@ -8,8 +8,7 @@ This is an extension for Drive Badger. It provides a so called hook script, that
 Clone this repository as `/opt/drivebadger/hooks/hook-virtual` directory on your Drive Badger persistent partition.
 
 When you install this hook, you should also install [`exclude-virtual`](https://github.com/drivebadger/exclude-virtual)
-configuration repository - otherwise virtual drive images will be exfiltrated twice: mounted filesystem contents,
-and images themselves. Note that `exclude-virtual` extension excludes also ISO images.
+configuration repository - it excludes additional files: ISO images and Hyper-V virtual machine state files.
 
 Also, you should read [notes about fine tuning this hook](https://github.com/drivebadger/drivebadger/wiki/Exfiltrating-virtual-servers).
 
